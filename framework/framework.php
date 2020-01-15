@@ -458,7 +458,8 @@ if (!function_exists('themewich_thumbnail_post_slideshow')) :
     //$permalink = get_permalink($id);
     $img_src = wp_get_attachment_image_src(get_post_thumbnail_id($id), 'full');
     $permalink = $img_src[0];
-		$title = get_the_title($id);
+    $title = get_the_title($id);
+    $subtitle = get_post_meta($id, 'ag_subheadline', true);
 		$permalink = '<a href="'.$permalink.'" title="'.$title.'" class="postlink lightbox-gallery no-ajaxy thumbnail-'.$image_size.'">';
 		$permalinkend = '</a>';
 		
@@ -505,6 +506,7 @@ if (!function_exists('themewich_thumbnail_post_slideshow')) :
 			$slideshow .= ' class="scale-with-grid"/><div class="overlay"></div>' .
                         '<div class="title">'.
                           '<h2>'.get_the_title($id).'</h2>'.
+                          '<p class="img-subtitle">' .get_post_meta($id, 'ag_subheadline', true). '<p>'.
                         '</div>' .$permalinkend;
 			
 			$slideshow .= (isset($thumb2[0]) && $thumb2[0] != '') ? '</li>' : '';

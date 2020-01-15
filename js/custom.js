@@ -173,7 +173,9 @@ jQuery.noConflict();
 				image: {
 					tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
 					titleSrc: function(item) {
-					  return item.el.find('img').attr('title');				  
+						var title = item.el.find('h2').text();
+						var sub = item.el.find('p').text();
+					  return title + " <small>" + sub + "</small";				  
 					},
 					 markup: '<div class="mfp-figure">'+
 						'<div class="mfp-close"></div>'+

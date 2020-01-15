@@ -6369,3 +6369,30 @@ span.rss-date {
   font-size: 30px;
   padding: 15px 0;
 }
+
+.img-subtitle {
+  display: none;
+}
+
+.mfp-title-wrapper {
+  float:right;
+}
+
+.gridstack .mfp-figure small {
+  text-align: right;
+}
+
+.home .pagetitle {
+  padding: 12px 0;
+  margin-bottom: 0;
+}
+
+.home .pagetitle .container .thirteen.columns {
+  width: 100%;
+}
+
+.home .pagetitle .container .thirteen.columns h2 {
+  text-align:right;
+  font-size: 27px;
+  padding-right: 24px;
+}
