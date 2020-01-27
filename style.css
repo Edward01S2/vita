@@ -6401,3 +6401,19 @@ span.rss-date {
   margin-bottom: 0;
   padding-bottom: 25px;
 }
+
+.social-icons {
+  clear: both;
+  padding: 1rem 0;
+}
+
+.social-icons svg {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: currentColor;
+  padding-right: 0.5rem;
+}
+
+.copyright-text {
+  text-align: center;
+}
