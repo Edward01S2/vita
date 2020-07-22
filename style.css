@@ -6417,3 +6417,9 @@ span.rss-date {
 .copyright-text {
   text-align: center;
 }
+
+.recent-project {
+  float: none;
+  margin: 0;
+  display: inline-block;
+}

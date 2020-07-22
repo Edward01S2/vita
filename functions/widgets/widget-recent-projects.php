@@ -62,7 +62,7 @@ class ag_recentprojects_widget extends WP_Widget {
 		'suppress_filters' => true, 
 	'posts_per_page' => $postnum, 	
 		//'orderby' => 'menu_order', // Sorted by Drag and Drop Order
-		'orderby' => 'title',
+		'orderby' => 'date',
 	'order' => 'DESC', // Top to Bottom 
 	) ); ?>
    <div class="recent-projects">
